@@ -1,0 +1,18 @@
+{
+	"error": {
+		"automationService": {
+			"actionCreateFailed": "Creating action of type \"{actionType}\" with trigger \"{trigger}\" failed",
+			"actionRemoveFailed": "Removing action with id \"{actionId}\" failed",
+			"actionFailed": "Triggering action \"{name}\" with trigger \"{trigger}\" failed",
+			"actionNotFound": "Action with id \"{notFoundId}\" not found",
+			"actionGetFailed": "Getting action with id \"{actionId}\" failed",
+			"actionTypeNotFound": "Action type \"{actionType}\" not found for trigger \"{trigger}\""
+		}
+	},
+	"info": {
+		"automationService": {
+			"trigger": "Triggering automation action with trigger \"{trigger}\"",
+			"actionTriggered": "Triggered action \"{name}\" with trigger \"{trigger}\""
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"info": {
+		"fetchAction": {
+			"fetch": "Fetch \"{url}\" with method \"{method}\""
+		}
+	}
+}
