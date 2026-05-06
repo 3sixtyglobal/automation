@@ -4,7 +4,7 @@
 	"description": "Shared data models for automation. Provides a consistent foundation for representing automation entities and enables other packages to build upon a reliable base.",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/twinfoundation/automation.git",
+		"url": "git+https://github.com/iotaledger/automation.git",
 		"directory": "packages/automation-models"
 	},
 	"author": "martyn.janes@iota.org",
@@ -78,7 +78,7 @@
 		"schemas"
 	],
 	"bugs": {
-		"url": "git+https://github.com/twinfoundation/automation/issues"
+		"url": "git+https://github.com/iotaledger/automation/issues"
 	},
 	"homepage": "https://twindev.org"
 }

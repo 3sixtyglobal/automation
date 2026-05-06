@@ -4,7 +4,7 @@
 	"description": "Actions for automation operations in the TWIN framework. Provides reusable logic for automation workflows and integrations.",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/twinfoundation/automation.git",
+		"url": "git+https://github.com/iotaledger/automation.git",
 		"directory": "packages/automation-actions"
 	},
 	"author": "martyn.janes@iota.org",
@@ -83,7 +83,7 @@
 		"business-logic"
 	],
 	"bugs": {
-		"url": "git+https://github.com/twinfoundation/automation/issues"
+		"url": "git+https://github.com/iotaledger/automation/issues"
 	},
 	"homepage": "https://twindev.org"
 }

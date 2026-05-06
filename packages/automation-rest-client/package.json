@@ -4,7 +4,7 @@
 	"description": "REST client operations for creating, updating, retrieving, and querying managed documents. Facilitates integration with automation services and external systems.",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/twinfoundation/automation.git",
+		"url": "git+https://github.com/iotaledger/automation.git",
 		"directory": "packages/automation-rest-client"
 	},
 	"author": "martyn.janes@iota.org",
@@ -77,7 +77,7 @@
 		"rest-api"
 	],
 	"bugs": {
-		"url": "git+https://github.com/twinfoundation/automation/issues"
+		"url": "git+https://github.com/iotaledger/automation/issues"
 	},
 	"homepage": "https://twindev.org"
 }
