@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.3-next.2](https://github.com/iotaledger/twin-automation/compare/automation-models-v0.0.3-next.1...automation-models-v0.0.3-next.2) (2026-05-11)
+
+
+### Features
+
+* typescript 6 update ([ee77cab](https://github.com/iotaledger/twin-automation/commit/ee77cab770cd3d2aff6192f146b4b5544c206d52))
+
 ## [0.0.3-next.1](https://github.com/iotaledger/twin-automation/compare/automation-models-v0.0.3-next.0...automation-models-v0.0.3-next.1) (2026-04-23)
 
 
