@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.3-next.3](https://github.com/iotaledger/twin-automation/compare/automation-models-v0.0.3-next.2...automation-models-v0.0.3-next.3) (2026-05-20)
+
+
+### Features
+
+* update dependencies ([e299490](https://github.com/iotaledger/twin-automation/commit/e299490b7dfe3d847a3beb254a609883caec2c98))
+
 ## [0.0.3-next.2](https://github.com/iotaledger/twin-automation/compare/automation-models-v0.0.3-next.1...automation-models-v0.0.3-next.2) (2026-05-11)
 
 
