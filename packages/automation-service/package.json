@@ -4,7 +4,7 @@
 	"description": "Service-side automation operations and REST route generation for server integrations. Ensures automation logic is accessible and maintainable for server-side applications.",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/iotaledger/automation.git",
+		"url": "git+https://github.com/iotaledger/twin-automation.git",
 		"directory": "packages/automation-service"
 	},
 	"author": "martyn.janes@iota.org",
@@ -90,7 +90,7 @@
 		"business-logic"
 	],
 	"bugs": {
-		"url": "git+https://github.com/iotaledger/automation/issues"
+		"url": "git+https://github.com/iotaledger/twin-automation/issues"
 	},
 	"homepage": "https://twindev.org"
 }
