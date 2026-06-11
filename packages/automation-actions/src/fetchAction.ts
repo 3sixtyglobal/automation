@@ -45,7 +45,7 @@ export class FetchAction implements IAutomationAction {
 			options.config
 		);
 		this._loggingComponent = ComponentFactory.getIfExists<ILoggingComponent>(
-			options?.loggingComponentType ?? "logging"
+			options?.loggingComponentType
 		);
 		this._config = options?.config;
 	}

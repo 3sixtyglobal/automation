@@ -8,7 +8,6 @@ import type { IAutomationServiceConfig } from "./IAutomationServiceConfig.js";
 export interface IAutomationServiceConstructorOptions {
 	/**
 	 * The type of the logging component.
-	 * @default logging
 	 */
 	loggingComponentType?: string;
 

@@ -56,7 +56,7 @@ export class AutomationService implements IAutomationComponent {
 	 * @param options The options for the service.
 	 */
 	constructor(options?: IAutomationServiceConstructorOptions) {
-		this._loggingComponentType = options?.loggingComponentType ?? "logging";
+		this._loggingComponentType = options?.loggingComponentType;
 		this._loggingComponent = ComponentFactory.getIfExists<ILoggingComponent>(
 			this._loggingComponentType
 		);
