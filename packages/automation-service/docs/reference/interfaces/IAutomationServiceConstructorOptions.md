@@ -10,12 +10,6 @@ Options for the automation Service constructor.
 
 The type of the logging component.
 
-#### Default
-
-```ts
-logging
-```
-
 ***
 
 ### automationActionEntryStorageType? {#automationactionentrystoragetype}

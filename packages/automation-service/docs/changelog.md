@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.0.3-next.4](https://github.com/iotaledger/twin-automation/compare/automation-service-v0.0.3-next.3...automation-service-v0.0.3-next.4) (2026-06-11)
+
+
+### Features
+
+* remove default loggers ([121b84d](https://github.com/iotaledger/twin-automation/commit/121b84d55b95e95d0362efe251ba21caae684382))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @twin.org/automation-models bumped from 0.0.3-next.3 to 0.0.3-next.4
+
 ## [0.0.3-next.3](https://github.com/iotaledger/twin-automation/compare/automation-service-v0.0.3-next.2...automation-service-v0.0.3-next.3) (2026-05-20)
 
 

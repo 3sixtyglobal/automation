@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.0.3-next.4](https://github.com/iotaledger/twin-automation/compare/automation-rest-client-v0.0.3-next.3...automation-rest-client-v0.0.3-next.4) (2026-06-11)
+
+
+### Miscellaneous Chores
+
+* **automation-rest-client:** Synchronize repo versions
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @twin.org/automation-models bumped from 0.0.3-next.3 to 0.0.3-next.4
+
 ## [0.0.3-next.3](https://github.com/iotaledger/twin-automation/compare/automation-rest-client-v0.0.3-next.2...automation-rest-client-v0.0.3-next.3) (2026-05-20)
 
 
