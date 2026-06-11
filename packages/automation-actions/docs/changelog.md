@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.0.3-next.5](https://github.com/iotaledger/twin-automation/compare/automation-actions-v0.0.3-next.4...automation-actions-v0.0.3-next.5) (2026-06-11)
+
+
+### Miscellaneous Chores
+
+* **automation-actions:** Synchronize repo versions
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @twin.org/automation-models bumped from 0.0.3-next.4 to 0.0.3-next.5
+
 ## [0.0.3-next.4](https://github.com/iotaledger/twin-automation/compare/automation-actions-v0.0.3-next.3...automation-actions-v0.0.3-next.4) (2026-06-11)
 
 

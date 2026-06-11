@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.0.3-next.5](https://github.com/iotaledger/twin-automation/compare/automation-service-v0.0.3-next.4...automation-service-v0.0.3-next.5) (2026-06-11)
+
+
+### Bug Fixes
+
+* register platform mock in automation service tests ([#8](https://github.com/iotaledger/twin-automation/issues/8)) ([3b03a66](https://github.com/iotaledger/twin-automation/commit/3b03a6692710d4e3b8ae795b555f52b5bcff8b66))
+* tests ([2171681](https://github.com/iotaledger/twin-automation/commit/21716812bc8fad850b78af59d0b4cd9897869c42))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @twin.org/automation-models bumped from 0.0.3-next.4 to 0.0.3-next.5
+
 ## [0.0.3-next.4](https://github.com/iotaledger/twin-automation/compare/automation-service-v0.0.3-next.3...automation-service-v0.0.3-next.4) (2026-06-11)
 
 
