@@ -37,6 +37,11 @@ describe("AutomationService", async () => {
 			entitySchema: nameof<LogEntry>()
 		});
 		EntityStorageConnectorFactory.register("log-entry", () => logEntryEntityStorage);
+		ComponentFactory.register("platform", () => ({
+			className: () => "MockPlatform",
+			isMultiTenant: () => false,
+			execute: async (method: () => Promise<void>) => method()
+		}));
 		LoggingConnectorFactory.register(
 			"logging",
 			() =>
