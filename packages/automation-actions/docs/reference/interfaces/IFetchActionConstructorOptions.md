@@ -10,12 +10,6 @@ Options for the fetch action constructor.
 
 The type of the logging component.
 
-#### Default
-
-```ts
-logging
-```
-
 ***
 
 ### config {#config}
