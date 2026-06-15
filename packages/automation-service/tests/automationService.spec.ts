@@ -26,7 +26,8 @@ describe("AutomationService", async () => {
 		initSchemaLogging();
 
 		automationActionEntryEntityStorage = new MemoryEntityStorageConnector<AutomationActionEntry>({
-			entitySchema: nameof<AutomationActionEntry>()
+			entitySchema: nameof<AutomationActionEntry>(),
+			config: { storageKey: "automation-action-entry" }
 		});
 		EntityStorageConnectorFactory.register(
 			"automation-action-entry",
@@ -34,7 +35,8 @@ describe("AutomationService", async () => {
 		);
 
 		logEntryEntityStorage = new MemoryEntityStorageConnector<LogEntry>({
-			entitySchema: nameof<LogEntry>()
+			entitySchema: nameof<LogEntry>(),
+			config: { storageKey: "log-entry" }
 		});
 		EntityStorageConnectorFactory.register("log-entry", () => logEntryEntityStorage);
 		ComponentFactory.register("platform", () => ({
