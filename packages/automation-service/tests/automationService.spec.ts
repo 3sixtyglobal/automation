@@ -68,8 +68,10 @@ describe("AutomationService", async () => {
 		}));
 	});
 
-	afterEach(() => {
+	afterEach(async () => {
 		Factory.clearFactories();
+		await automationActionEntryEntityStorage.teardown();
+		await logEntryEntityStorage.teardown();
 	});
 
 	test("can create the service", async () => {
@@ -82,7 +84,7 @@ describe("AutomationService", async () => {
 		const id = await service.actionCreate("test-action", "test-trigger", { test: "config" });
 		expect(id).toBeDefined();
 
-		expect(automationActionEntryEntityStorage.getStore()).toEqual([
+		expect(await automationActionEntryEntityStorage.getStore()).toEqual([
 			{
 				id: expect.any(String),
 				actionType: "test-action",
@@ -117,7 +119,7 @@ describe("AutomationService", async () => {
 		const service = new AutomationService();
 		const id = await service.actionCreate("remove-action", "remove-trigger", { foo: "bar" });
 		await service.actionRemove(id);
-		expect(automationActionEntryEntityStorage.getStore()).toEqual([]);
+		expect(await automationActionEntryEntityStorage.getStore()).toEqual([]);
 	});
 
 	test("removing non-existent action does not throw", async () => {
@@ -161,7 +163,7 @@ describe("AutomationService", async () => {
 			}
 		]);
 
-		const logs = logEntryEntityStorage.getStore();
+		const logs = await logEntryEntityStorage.getStore();
 		expect(logs.some(l => l.message === "trigger")).toBeTruthy();
 		expect(logs.some(l => l.message === "actionTriggered")).toBeTruthy();
 	});
@@ -171,7 +173,7 @@ describe("AutomationService", async () => {
 		await service.actionCreate("unknown-action", "missing-trigger");
 		await service.trigger("missing-trigger");
 
-		const logs = logEntryEntityStorage.getStore();
+		const logs = await logEntryEntityStorage.getStore();
 		expect(logs.some(l => l.message === "actionTypeNotFound")).toBeTruthy();
 	});
 
@@ -180,7 +182,7 @@ describe("AutomationService", async () => {
 		await service.actionCreate("fail-action", "fail-trigger");
 		await service.trigger("fail-trigger");
 
-		const logs = logEntryEntityStorage.getStore();
+		const logs = await logEntryEntityStorage.getStore();
 		expect(logs.some(l => l.message === "actionFailed")).toBeTruthy();
 	});
 
@@ -212,7 +214,7 @@ describe("AutomationService", async () => {
 	test("trigger with no matching actions does not throw or log error", async () => {
 		const service = new AutomationService({ loggingComponentType: "logging" });
 		await service.trigger("no-such-trigger");
-		const logs = logEntryEntityStorage.getStore();
+		const logs = await logEntryEntityStorage.getStore();
 		expect(logs.some(l => l.message === "trigger")).toBeTruthy();
 		expect(
 			logs.some(l => l.message === "actionTypeNotFound" || l.message === "actionFailed")
