@@ -9,7 +9,7 @@ import type { IFetchActionConfig } from "./models/IFetchActionConfig.js";
 import type { IFetchActionConstructorOptions } from "./models/IFetchActionConstructorOptions.js";
 
 /**
- * Service for performing automation operations.
+ * Automation action that performs HTTP fetch requests.
  */
 export class FetchAction implements IAutomationAction {
 	/**
