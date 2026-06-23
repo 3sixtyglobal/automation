@@ -1,6 +1,6 @@
 # Class: FetchAction
 
-Service for performing automation operations.
+Automation action that performs HTTP fetch requests.
 
 ## Implements
 

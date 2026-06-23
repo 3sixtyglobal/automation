@@ -118,7 +118,7 @@ The id of the action to remove.
 
 `Promise`\<`void`\>
 
-Nothing.
+A promise that resolves when the action has been removed.
 
 #### Implementation of
 
@@ -224,7 +224,7 @@ Optional data to be passed to the actions.
 
 `Promise`\<`void`\>
 
-Nothing.
+A promise that resolves when all matching actions have been dispatched.
 
 #### Implementation of
 

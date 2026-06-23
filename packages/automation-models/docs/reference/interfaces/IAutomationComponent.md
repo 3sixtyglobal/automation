@@ -46,7 +46,7 @@ The id of the created action.
 
 > **actionRemove**(`actionId`): `Promise`\<`void`\>
 
-Remove an action by it's id.
+Remove an action by its id.
 
 #### Parameters
 
@@ -60,7 +60,7 @@ The id of the action to remove.
 
 `Promise`\<`void`\>
 
-Nothing.
+A promise that resolves when the action is removed.
 
 ***
 
@@ -68,7 +68,7 @@ Nothing.
 
 > **actionGet**(`actionId`): `Promise`\<[`IAutomationActionEntry`](IAutomationActionEntry.md)\>
 
-Get an action by it's id.
+Get an action by its id.
 
 #### Parameters
 
@@ -166,4 +166,4 @@ Optional data to be passed to the actions.
 
 `Promise`\<`void`\>
 
-Nothing.
+A promise that resolves when all matching actions have executed.
