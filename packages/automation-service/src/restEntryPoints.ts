@@ -3,6 +3,9 @@
 import type { IRestRouteEntryPoint } from "@twin.org/api-models";
 import { generateRestRoutesAutomation, tagsAutomation } from "./automationRoutes.js";
 
+/**
+ * REST entry points for the automation service.
+ */
 export const restEntryPoints: IRestRouteEntryPoint[] = [
 	{
 		name: "automation",

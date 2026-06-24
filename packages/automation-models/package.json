@@ -1,10 +1,10 @@
 {
 	"name": "@twin.org/automation-models",
-	"version": "0.0.3-next.0",
+	"version": "0.9.0-next.1",
 	"description": "Shared data models for automation. Provides a consistent foundation for representing automation entities and enables other packages to build upon a reliable base.",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/twinfoundation/automation.git",
+		"url": "git+https://github.com/iotaledger/twin-automation.git",
 		"directory": "packages/automation-models"
 	},
 	"author": "martyn.janes@iota.org",
@@ -38,15 +38,15 @@
 		"@twin.org/validate-locales": "next",
 		"@twin.org/ts-to-jsonld-context": "next",
 		"@twin.org/ts-to-schema": "next",
-		"@vitest/coverage-v8": "4.1.1",
+		"@vitest/coverage-v8": "4.1.9",
 		"copyfiles": "2.4.1",
 		"nodemon": "3.1.14",
 		"rimraf": "6.1.3",
-		"ts-patch": "3.3.0",
-		"typedoc": "0.28.18",
-		"typedoc-plugin-markdown": "4.11.0",
-		"typescript": "5.9.3",
-		"vitest": "4.1.1"
+		"ts-patch": "4.0.1",
+		"typedoc": "0.28.19",
+		"typedoc-plugin-markdown": "4.12.0",
+		"typescript": "6.0.3",
+		"vitest": "4.1.9"
 	},
 	"main": "./dist/es/index.js",
 	"types": "./dist/types/index.d.ts",
@@ -78,7 +78,7 @@
 		"schemas"
 	],
 	"bugs": {
-		"url": "git+https://github.com/twinfoundation/automation/issues"
+		"url": "git+https://github.com/iotaledger/twin-automation/issues"
 	},
 	"homepage": "https://twindev.org"
 }

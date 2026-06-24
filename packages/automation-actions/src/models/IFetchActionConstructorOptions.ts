@@ -8,7 +8,6 @@ import type { IFetchActionConfig } from "./IFetchActionConfig.js";
 export interface IFetchActionConstructorOptions {
 	/**
 	 * The type of the logging component.
-	 * @default logging
 	 */
 	loggingComponentType?: string;
 

@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: Apache-2.0.
 import { ComponentFactory } from "@twin.org/core";
 import { HttpMethod, FetchHelper } from "@twin.org/web";
-import { vi } from "vitest";
 import { FetchAction } from "../src/fetchAction.js";
 
 describe("fetch-action", () => {

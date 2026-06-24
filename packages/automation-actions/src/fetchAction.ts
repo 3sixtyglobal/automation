@@ -9,7 +9,7 @@ import type { IFetchActionConfig } from "./models/IFetchActionConfig.js";
 import type { IFetchActionConstructorOptions } from "./models/IFetchActionConstructorOptions.js";
 
 /**
- * Service for performing automation operations.
+ * Automation action that performs HTTP fetch requests.
  */
 export class FetchAction implements IAutomationAction {
 	/**
@@ -45,7 +45,7 @@ export class FetchAction implements IAutomationAction {
 			options.config
 		);
 		this._loggingComponent = ComponentFactory.getIfExists<ILoggingComponent>(
-			options?.loggingComponentType ?? "logging"
+			options?.loggingComponentType
 		);
 		this._config = options?.config;
 	}

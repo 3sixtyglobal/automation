@@ -17,14 +17,14 @@ export interface IAutomationComponent extends IComponent {
 	actionCreate(actionType: string, trigger: string, config?: unknown): Promise<string>;
 
 	/**
-	 * Remove an action by it's id.
+	 * Remove an action by its id.
 	 * @param actionId The id of the action to remove.
-	 * @returns Nothing.
+	 * @returns A promise that resolves when the action is removed.
 	 */
 	actionRemove(actionId: string): Promise<void>;
 
 	/**
-	 * Get an action by it's id.
+	 * Get an action by its id.
 	 * @param actionId The id of the action to get.
 	 * @returns The action with the given id.
 	 */
@@ -57,7 +57,7 @@ export interface IAutomationComponent extends IComponent {
 	 * Locate automation actions which match the given trigger and execute them.
 	 * @param trigger The trigger to find the actions for.
 	 * @param data Optional data to be passed to the actions.
-	 * @returns Nothing.
+	 * @returns A promise that resolves when all matching actions have executed.
 	 */
 	trigger(trigger: string, data?: unknown): Promise<void>;
 }
