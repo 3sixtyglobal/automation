@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.9.1-next.2](https://github.com/iotaledger/twin-automation/compare/automation-rest-client-v0.9.1-next.1...automation-rest-client-v0.9.1-next.2) (2026-06-29)
+
+
+### Features
+
+* enhanced rest testing ([#19](https://github.com/iotaledger/twin-automation/issues/19)) ([69ee1f5](https://github.com/iotaledger/twin-automation/commit/69ee1f510be4f3c2b8e09db4ff240e0a56c17e57))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @twin.org/automation-models bumped from 0.9.1-next.1 to 0.9.1-next.2
+
 ## [0.9.1-next.1](https://github.com/iotaledger/twin-automation/compare/automation-rest-client-v0.9.1-next.0...automation-rest-client-v0.9.1-next.1) (2026-06-26)
 
 
