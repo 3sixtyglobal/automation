@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.9.1-next.3](https://github.com/iotaledger/twin-automation/compare/automation-service-v0.9.1-next.2...automation-service-v0.9.1-next.3) (2026-06-30)
+
+
+### Features
+
+* rest enhancements ([001df6a](https://github.com/iotaledger/twin-automation/commit/001df6a5468096eb9c8c80dc12f1d1f0e10dcca6))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @twin.org/automation-models bumped from 0.9.1-next.2 to 0.9.1-next.3
+
 ## [0.9.1-next.2](https://github.com/iotaledger/twin-automation/compare/automation-service-v0.9.1-next.1...automation-service-v0.9.1-next.2) (2026-06-29)
 
 

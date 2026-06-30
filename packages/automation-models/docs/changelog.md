@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.1-next.3](https://github.com/iotaledger/twin-automation/compare/automation-models-v0.9.1-next.2...automation-models-v0.9.1-next.3) (2026-06-30)
+
+
+### Miscellaneous Chores
+
+* **automation-models:** Synchronize repo versions
+
 ## [0.9.1-next.2](https://github.com/iotaledger/twin-automation/compare/automation-models-v0.9.1-next.1...automation-models-v0.9.1-next.2) (2026-06-29)
 
 
