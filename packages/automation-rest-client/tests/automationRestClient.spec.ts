@@ -119,7 +119,7 @@ describe("AutomationRestClient", () => {
 
 			const result = await client.actionCreate(ACTION_TYPE, TRIGGER);
 
-			expect(result).toBe(LOCATION);
+			expect(result).toBe(ACTION_ID);
 		});
 	});
 
