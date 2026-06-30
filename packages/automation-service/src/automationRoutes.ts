@@ -1,11 +1,14 @@
 // Copyright 2026 IOTA Stiftung.
 // SPDX-License-Identifier: Apache-2.0.
-import type {
-	ICreatedResponse,
-	IHttpRequestContext,
-	INoContentResponse,
-	IRestRoute,
-	ITag
+import {
+	HttpContextIdKeys,
+	HttpHeaderHelper,
+	HttpUrlHelper,
+	type ICreatedResponse,
+	type IHttpRequestContext,
+	type INoContentResponse,
+	type IRestRoute,
+	type ITag
 } from "@twin.org/api-models";
 import type {
 	IAutomationActionCreateRequest,
@@ -17,9 +20,10 @@ import type {
 	IAutomationComponent,
 	IAutomationTriggerRequest
 } from "@twin.org/automation-models";
+import { ContextIdStore } from "@twin.org/context";
 import { Coerce, ComponentFactory, Guards } from "@twin.org/core";
 import { nameof } from "@twin.org/nameof";
-import { HttpStatusCode } from "@twin.org/web";
+import { HttpStatusCode, type IHttpHeaders } from "@twin.org/web";
 
 /**
  * The source used when communicating about these routes.
@@ -53,7 +57,7 @@ export function generateRestRoutesAutomation(
 		method: "POST",
 		path: `${baseRouteName}/`,
 		handler: async (httpRequestContext, request) =>
-			automationActionCreate(httpRequestContext, componentName, request),
+			automationActionCreate(httpRequestContext, componentName, request, baseRouteName),
 		requestType: {
 			type: nameof<IAutomationActionCreateRequest>(),
 			examples: [
@@ -256,12 +260,14 @@ export function generateRestRoutesAutomation(
  * @param httpRequestContext The request context for the API.
  * @param componentName The name of the component to use in the routes.
  * @param request The request payload containing actionType, trigger, and configuration.
+ * @param baseRouteName The base route name for the API.
  * @returns The created response with location header.
  */
 export async function automationActionCreate(
 	httpRequestContext: IHttpRequestContext,
 	componentName: string,
-	request: IAutomationActionCreateRequest
+	request: IAutomationActionCreateRequest,
+	baseRouteName: string
 ): Promise<ICreatedResponse> {
 	Guards.object<IAutomationActionCreateRequest>(ROUTES_SOURCE, nameof(request), request);
 	Guards.object<IAutomationActionCreateRequest["body"]>(
@@ -276,9 +282,20 @@ export async function automationActionCreate(
 		request.body.trigger,
 		request.body.configuration
 	);
+
+	const contextIds = await ContextIdStore.getContextIds();
+	const publicOrigin = contextIds?.[HttpContextIdKeys.PublicOrigin];
+
+	const headers: IHttpHeaders = {};
+	HttpHeaderHelper.buildId(
+		headers,
+		id,
+		HttpUrlHelper.combineOriginPath(publicOrigin, `${baseRouteName}/:id`)
+	);
+
 	return {
 		statusCode: HttpStatusCode.created,
-		headers: { location: id }
+		headers
 	};
 }
 

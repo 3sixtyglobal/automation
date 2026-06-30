@@ -74,7 +74,7 @@ export class AutomationRestClient extends BaseRestClient implements IAutomationC
 			}
 		);
 
-		return HttpHeaderHelper.extractId(response.headers);
+		return HttpHeaderHelper.extractId(response.headers, `${this.getPathPrefix()}/:id`);
 	}
 
 	/**
