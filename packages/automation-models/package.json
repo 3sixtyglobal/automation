@@ -1,6 +1,6 @@
 {
 	"name": "@twin.org/automation-models",
-	"version": "0.9.1-next.3",
+	"version": "0.9.1",
 	"description": "Shared data models for automation. Provides a consistent foundation for representing automation entities and enables other packages to build upon a reliable base.",
 	"repository": {
 		"type": "git",
@@ -29,15 +29,15 @@
 		"dist:no-test": "npm run clean && npm run build && npm run test:build"
 	},
 	"dependencies": {
-		"@twin.org/core": "next",
-		"@twin.org/nameof": "next"
+		"@twin.org/core": "^0.9.1",
+		"@twin.org/nameof": "^0.9.1"
 	},
 	"devDependencies": {
-		"@twin.org/nameof-transformer": "next",
-		"@twin.org/nameof-vitest-plugin": "next",
-		"@twin.org/validate-locales": "next",
-		"@twin.org/ts-to-jsonld-context": "next",
-		"@twin.org/ts-to-schema": "next",
+		"@twin.org/nameof-transformer": "^0.9.1",
+		"@twin.org/nameof-vitest-plugin": "^0.9.1",
+		"@twin.org/validate-locales": "^0.9.1",
+		"@twin.org/ts-to-jsonld-context": "^0.9.1",
+		"@twin.org/ts-to-schema": "^0.9.1",
 		"@vitest/coverage-v8": "4.1.10",
 		"copyfiles": "2.4.1",
 		"nodemon": "3.1.14",
