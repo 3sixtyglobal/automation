@@ -1,6 +1,6 @@
 {
 	"name": "@twin.org/automation-actions",
-	"version": "0.9.1-next.3",
+	"version": "0.9.2-next.0",
 	"description": "Actions for automation operations in the TWIN framework. Provides reusable logic for automation workflows and integrations.",
 	"repository": {
 		"type": "git",
@@ -29,7 +29,7 @@
 	},
 	"dependencies": {
 		"@twin.org/api-models": "next",
-		"@twin.org/automation-models": "0.9.1-next.3",
+		"@twin.org/automation-models": "0.9.2-next.0",
 		"@twin.org/context": "next",
 		"@twin.org/core": "next",
 		"@twin.org/logging-models": "next",
