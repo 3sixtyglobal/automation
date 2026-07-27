@@ -1,10 +1,11 @@
 // Copyright 2026 IOTA Stiftung.
 // SPDX-License-Identifier: Apache-2.0.
 import { BaseRestClient } from "@twin.org/api-core";
-import type {
-	IBaseRestClientConfig,
-	ICreatedResponse,
-	INoContentResponse
+import {
+	HttpHeaderHelper,
+	type IBaseRestClientConfig,
+	type ICreatedResponse,
+	type INoContentResponse
 } from "@twin.org/api-models";
 import type {
 	IAutomationActionCreateRequest,
@@ -19,7 +20,7 @@ import type {
 } from "@twin.org/automation-models";
 import { Coerce, Guards } from "@twin.org/core";
 import { nameof } from "@twin.org/nameof";
-import { HeaderTypes } from "@twin.org/web";
+import { HttpMethod } from "@twin.org/web";
 
 /**
  * Client for performing automation through to REST endpoints.
@@ -63,7 +64,7 @@ export class AutomationRestClient extends BaseRestClient implements IAutomationC
 
 		const response = await this.fetch<IAutomationActionCreateRequest, ICreatedResponse>(
 			"/",
-			"POST",
+			HttpMethod.POST,
 			{
 				body: {
 					actionType,
@@ -73,7 +74,7 @@ export class AutomationRestClient extends BaseRestClient implements IAutomationC
 			}
 		);
 
-		return response.headers[HeaderTypes.Location];
+		return HttpHeaderHelper.extractId(response.headers, `${this.getPathPrefix()}/:id`);
 	}
 
 	/**
@@ -84,11 +85,15 @@ export class AutomationRestClient extends BaseRestClient implements IAutomationC
 	public async actionRemove(actionId: string): Promise<void> {
 		Guards.stringValue(AutomationRestClient.CLASS_NAME, nameof(actionId), actionId);
 
-		await this.fetch<IAutomationActionRemoveRequest, INoContentResponse>("/:actionId", "DELETE", {
-			pathParams: {
-				actionId
+		await this.fetch<IAutomationActionRemoveRequest, INoContentResponse>(
+			"/:actionId",
+			HttpMethod.DELETE,
+			{
+				pathParams: {
+					actionId
+				}
 			}
-		});
+		);
 	}
 
 	/**
@@ -101,7 +106,7 @@ export class AutomationRestClient extends BaseRestClient implements IAutomationC
 
 		const response = await this.fetch<IAutomationActionGetRequest, IAutomationActionGetResponse>(
 			"/:actionId",
-			"GET",
+			HttpMethod.GET,
 			{
 				pathParams: {
 					actionId
@@ -132,7 +137,7 @@ export class AutomationRestClient extends BaseRestClient implements IAutomationC
 		const response = await this.fetch<
 			IAutomationActionsQueryRequest,
 			IAutomationActionsQueryResponse
-		>("/", "GET", {
+		>("/", HttpMethod.GET, {
 			query: {
 				trigger: options?.trigger,
 				actionType: options?.actionType,
@@ -153,13 +158,17 @@ export class AutomationRestClient extends BaseRestClient implements IAutomationC
 	public async trigger(trigger: string, data?: unknown): Promise<void> {
 		Guards.stringValue(AutomationRestClient.CLASS_NAME, nameof(trigger), trigger);
 
-		await this.fetch<IAutomationTriggerRequest, INoContentResponse>("/trigger/:trigger", "POST", {
-			pathParams: {
-				trigger
-			},
-			body: {
-				data
+		await this.fetch<IAutomationTriggerRequest, INoContentResponse>(
+			"/trigger/:trigger",
+			HttpMethod.POST,
+			{
+				pathParams: {
+					trigger
+				},
+				body: {
+					data
+				}
 			}
-		});
+		);
 	}
 }

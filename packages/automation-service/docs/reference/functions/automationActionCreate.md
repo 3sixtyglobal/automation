@@ -1,6 +1,6 @@
 # Function: automationActionCreate()
 
-> **automationActionCreate**(`httpRequestContext`, `componentName`, `request`): `Promise`\<`ICreatedResponse`\>
+> **automationActionCreate**(`httpRequestContext`, `componentName`, `request`, `baseRouteName`): `Promise`\<`ICreatedResponse`\>
 
 Create an automation action.
 
@@ -23,6 +23,12 @@ The name of the component to use in the routes.
 `IAutomationActionCreateRequest`
 
 The request payload containing actionType, trigger, and configuration.
+
+### baseRouteName
+
+`string`
+
+The base route name for the API.
 
 ## Returns
 
