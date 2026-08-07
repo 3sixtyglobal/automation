@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.9.2-next.1](https://github.com/iotaledger/twin-automation/compare/automation-rest-client-v0.9.2-next.0...automation-rest-client-v0.9.2-next.1) (2026-08-07)
+
+
+### Features
+
+* enhanced rest testing ([#19](https://github.com/iotaledger/twin-automation/issues/19)) ([69ee1f5](https://github.com/iotaledger/twin-automation/commit/69ee1f510be4f3c2b8e09db4ff240e0a56c17e57))
+* initial commit ([33ddc12](https://github.com/iotaledger/twin-automation/commit/33ddc12869db11b7f861967f820ac4d5b00dbca2))
+* linting and dependency update ([2e2a547](https://github.com/iotaledger/twin-automation/commit/2e2a547e12bd472091e8cc5f35fc82e774ab6625))
+* rest enhancements ([b451133](https://github.com/iotaledger/twin-automation/commit/b451133cb593fe789b44b0d7d05b7bbfba98d838))
+* rest enhancements ([001df6a](https://github.com/iotaledger/twin-automation/commit/001df6a5468096eb9c8c80dc12f1d1f0e10dcca6))
+* rest enhancements ([c99e2a2](https://github.com/iotaledger/twin-automation/commit/c99e2a249a2540b547ae95557baa3bf7a4377422))
+* typescript 6 update ([ee77cab](https://github.com/iotaledger/twin-automation/commit/ee77cab770cd3d2aff6192f146b4b5544c206d52))
+* update dependencies ([e299490](https://github.com/iotaledger/twin-automation/commit/e299490b7dfe3d847a3beb254a609883caec2c98))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @twin.org/automation-models bumped from 0.9.2-next.0 to 0.9.2-next.1
+
 ## [0.9.1](https://github.com/iotaledger/twin-automation/compare/automation-rest-client-v0.9.1...automation-rest-client-v0.9.1) (2026-07-27)
 
 
