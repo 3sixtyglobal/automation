@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.9.2](https://github.com/iotaledger/twin-automation/compare/automation-actions-v0.9.2...automation-actions-v0.9.2) (2026-08-24)
+
+
+### Features
+
+* initial commit ([33ddc12](https://github.com/iotaledger/twin-automation/commit/33ddc12869db11b7f861967f820ac4d5b00dbca2))
+* release to production ([#15](https://github.com/iotaledger/twin-automation/issues/15)) ([fe4baa4](https://github.com/iotaledger/twin-automation/commit/fe4baa495825852b93dab09d5c2b8f7c10899542))
+* release to production ([#25](https://github.com/iotaledger/twin-automation/issues/25)) ([7176f0b](https://github.com/iotaledger/twin-automation/commit/7176f0b8a99b6a987c3a48939c8a225e748bebfe))
+* release to production ([#31](https://github.com/iotaledger/twin-automation/issues/31)) ([003792d](https://github.com/iotaledger/twin-automation/commit/003792dcda0a3ccfd760d5115cbc94c76b45ee77))
+
 ## [0.9.2-next.1](https://github.com/iotaledger/twin-automation/compare/automation-actions-v0.9.2-next.0...automation-actions-v0.9.2-next.1) (2026-08-07)
 
 
