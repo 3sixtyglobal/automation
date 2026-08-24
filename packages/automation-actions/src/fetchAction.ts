@@ -92,20 +92,21 @@ export class FetchAction implements IAutomationAction {
 			}
 		});
 
-		let combinedPayload;
+		const combinedPayload = {};
 
-		if (Is.object(data) || Is.object(this._config.payload)) {
-			combinedPayload = {
-				...(Is.object(data) ? data : {}),
-				...(Is.object(this._config.payload) ? this._config.payload : {})
-			};
+		if (Is.object(data)) {
+			Object.assign(combinedPayload, data);
+		}
+
+		if (Is.object(this._config.payload)) {
+			Object.assign(combinedPayload, this._config.payload);
 		}
 
 		await FetchHelper.fetchJson(
 			FetchAction.CLASS_NAME,
 			finalUrl,
 			this._config.method ?? HttpMethod.GET,
-			combinedPayload,
+			Is.objectValue(combinedPayload) ? combinedPayload : undefined,
 			{
 				headers: this._config.headers
 			}
