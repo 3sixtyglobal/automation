@@ -1,6 +1,6 @@
 {
-	"packages/automation-models": "0.9.2-next.1",
-	"packages/automation-service": "0.9.2-next.1",
-	"packages/automation-rest-client": "0.9.2-next.1",
-	"packages/automation-actions": "0.9.2-next.1"
+	"packages/automation-models": "0.9.3-next.0",
+	"packages/automation-service": "0.9.3-next.0",
+	"packages/automation-rest-client": "0.9.3-next.0",
+	"packages/automation-actions": "0.9.3-next.0"
 }
