@@ -1,6 +1,6 @@
 {
 	"name": "@twin.org/automation-models",
-	"version": "0.9.3-next.0",
+	"version": "0.10.1-next.0",
 	"description": "Shared data models for automation. Provides a consistent foundation for representing automation entities and enables other packages to build upon a reliable base.",
 	"repository": {
 		"type": "git",
