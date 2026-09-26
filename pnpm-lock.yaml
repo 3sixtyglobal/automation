@@ -321,12 +321,6 @@ importers:
       '@twin.org/nameof-vitest-plugin':
         specifier: next
         version: 0.10.1-next.10(@types/node@26.6.2)(@vitest/coverage-v8@5.0.1)(vite@8.3.0(@types/node@26.6.2)(jiti@2.6.1))
-      '@twin.org/ts-to-jsonld-context':
-        specifier: next
-        version: 0.9.3-next.1
-      '@twin.org/ts-to-schema':
-        specifier: next
-        version: 0.9.3-next.1
       '@twin.org/validate-locales':
         specifier: next
         version: 0.10.1-next.10
@@ -1314,18 +1308,8 @@ packages:
     resolution: {integrity: sha512-B1UgoaaQIm9HaiQW8NZY2afDAqj07p195iZ9uSWVh4SFnSQMnNyBEp7iYMmNGJoGuQ/Bz0Uia59hNFn3/0Lrew==}
     engines: {node: '>=24.0.0'}
 
-  '@twin.org/ts-to-jsonld-context@0.9.3-next.1':
-    resolution: {integrity: sha512-0CWRLO9vzZI18j3F8cUpTRd+wtIjWtJtJLenGdxW/D6vsB8v6e9t+fltgE+MlmYAq0LLEH7lYu6P2TmFDvSi0g==}
-    engines: {node: '>=24.0.0'}
-    hasBin: true
-
   '@twin.org/ts-to-openapi@0.9.3-next.1':
     resolution: {integrity: sha512-qH0bvYPktD/9o964LpQqHS3GwisRIy7e6DcnTWcdsPb/MiGN5jPanfESGW4wPEfiu3u4J8XTMIOX7noO3QioWQ==}
-    engines: {node: '>=24.0.0'}
-    hasBin: true
-
-  '@twin.org/ts-to-schema@0.9.3-next.1':
-    resolution: {integrity: sha512-eblEjpDVeRT5Xv0dBfUntNyvYNP9TDgNdjTpUNNxlq10FPNiSENMMrvTglr45QM019lXriWuQe3FxUUvIvFrWw==}
     engines: {node: '>=24.0.0'}
     hasBin: true
 
@@ -4515,16 +4499,6 @@ snapshots:
       '@twin.org/core': 0.10.1-next.10
       '@twin.org/nameof': 0.10.1-next.10
 
-  '@twin.org/ts-to-jsonld-context@0.9.3-next.1':
-    dependencies:
-      '@twin.org/cli-core': 0.10.1-next.10
-      '@twin.org/core': 0.10.1-next.10
-      '@twin.org/nameof': 0.10.1-next.10
-      '@twin.org/tools-core': 0.9.3-next.1
-      commander: 15.0.0
-      glob: 13.0.6
-      typescript: 6.0.3
-
   '@twin.org/ts-to-openapi@0.9.3-next.1':
     dependencies:
       '@twin.org/cli-core': 0.10.1-next.10
@@ -4533,16 +4507,6 @@ snapshots:
       '@twin.org/tools-core': 0.9.3-next.1
       '@twin.org/tools-models': 0.9.3-next.1
       '@twin.org/web': 0.10.1-next.10
-      commander: 15.0.0
-      glob: 13.0.6
-
-  '@twin.org/ts-to-schema@0.9.3-next.1':
-    dependencies:
-      '@twin.org/cli-core': 0.10.1-next.10
-      '@twin.org/core': 0.10.1-next.10
-      '@twin.org/nameof': 0.10.1-next.10
-      '@twin.org/tools-core': 0.9.3-next.1
-      '@twin.org/tools-models': 0.9.3-next.1
       commander: 15.0.0
       glob: 13.0.6
 
