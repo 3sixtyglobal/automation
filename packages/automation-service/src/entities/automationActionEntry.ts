@@ -10,19 +10,19 @@ export class AutomationActionEntry {
 	/**
 	 * The unique identifier for the automation action entry.
 	 */
-	@property({ type: "string", isPrimary: true })
+	@property({ type: "string", isPrimary: true, maxLength: 255 })
 	public id!: string;
 
 	/**
 	 * The type of action performed by the automation.
 	 */
-	@property({ type: "string", isSecondary: true })
+	@property({ type: "string", maxLength: 128, isSecondary: true })
 	public actionType!: string;
 
 	/**
 	 * The trigger for the automation action.
 	 */
-	@property({ type: "string", isSecondary: true })
+	@property({ type: "string", maxLength: 128, isSecondary: true })
 	public trigger!: string;
 
 	/**

@@ -1,5 +1,34 @@
 # Changelog
 
+## [0.10.1-next.1](https://github.com/iotaledger/twin-automation/compare/automation-service-v0.10.1-next.0...automation-service-v0.10.1-next.1) (2026-09-18)
+
+
+### Features
+
+* improve entity schemas ([#40](https://github.com/iotaledger/twin-automation/issues/40)) ([708483a](https://github.com/iotaledger/twin-automation/commit/708483a4c0309bd9713bdb28284df3a2f85eed5c))
+* initial commit ([33ddc12](https://github.com/iotaledger/twin-automation/commit/33ddc12869db11b7f861967f820ac4d5b00dbca2))
+* linting and dependency update ([2e2a547](https://github.com/iotaledger/twin-automation/commit/2e2a547e12bd472091e8cc5f35fc82e774ab6625))
+* remove default loggers ([121b84d](https://github.com/iotaledger/twin-automation/commit/121b84d55b95e95d0362efe251ba21caae684382))
+* rest enhancements ([001df6a](https://github.com/iotaledger/twin-automation/commit/001df6a5468096eb9c8c80dc12f1d1f0e10dcca6))
+* typescript 6 update ([ee77cab](https://github.com/iotaledger/twin-automation/commit/ee77cab770cd3d2aff6192f146b4b5544c206d52))
+* update dependencies ([e299490](https://github.com/iotaledger/twin-automation/commit/e299490b7dfe3d847a3beb254a609883caec2c98))
+
+
+### Bug Fixes
+
+* register platform mock in automation service tests ([#8](https://github.com/iotaledger/twin-automation/issues/8)) ([3b03a66](https://github.com/iotaledger/twin-automation/commit/3b03a6692710d4e3b8ae795b555f52b5bcff8b66))
+* test mocks ([d9db654](https://github.com/iotaledger/twin-automation/commit/d9db6544c53782b30be5f3a37a088fbe7c4477c8))
+* tests ([2171681](https://github.com/iotaledger/twin-automation/commit/21716812bc8fad850b78af59d0b4cd9897869c42))
+* use async getStore in tests ([bd8f7f1](https://github.com/iotaledger/twin-automation/commit/bd8f7f1bcb30352aaef9f3ab36d58db10907444c))
+* use async getStore in tests ([c77e7e3](https://github.com/iotaledger/twin-automation/commit/c77e7e36f3543b3d77bc72c66e9422a4f1ff886d))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @twin.org/automation-models bumped from 0.10.1-next.0 to 0.10.1-next.1
+
 ## [0.10.0](https://github.com/iotaledger/twin-automation/compare/automation-service-v0.10.0...automation-service-v0.10.0) (2026-09-16)
 
 
