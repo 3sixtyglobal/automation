@@ -5,7 +5,7 @@ This package provides a service for managing and executing automation actions in
 ## AutomationService
 
 ```typescript
-import { AutomationService } from '@twin.org/automation-service';
+import { AutomationService } from '@3sixty/automation-service';
 
 // Create a service instance (using defaults)
 const service = new AutomationService();

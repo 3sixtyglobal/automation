@@ -1,4 +1,4 @@
-# @twin.org/automation-service
+# @3sixty/automation-service
 
 ## Classes
 

@@ -10,6 +10,7 @@
 	"versioning": "prerelease",
 	"prerelease": true,
 	"prerelease-type": "next",
+	"last-release-sha": "c5dba726bc04e85b47059d05fd6ab941a91fd3b7",
 	"packages": {
 		"packages/automation-models": {
 			"package-name": "automation-models",

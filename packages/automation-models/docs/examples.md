@@ -5,7 +5,7 @@ This package provides shared interfaces and factories for automation actions, en
 ## IAutomationAction
 
 ```typescript
-import type { IAutomationAction } from '@twin.org/automation-models';
+import type { IAutomationAction } from '@3sixty/automation-models';
 
 class MyAction implements IAutomationAction {
   async trigger(data?: unknown): Promise<void> {
@@ -21,7 +21,7 @@ class MyAction implements IAutomationAction {
 ## IAutomationActionEntry
 
 ```typescript
-import type { IAutomationActionEntry } from '@twin.org/automation-models';
+import type { IAutomationActionEntry } from '@3sixty/automation-models';
 
 const entry: IAutomationActionEntry = {
   id: 'action-1',
@@ -34,7 +34,7 @@ const entry: IAutomationActionEntry = {
 ## IAutomationComponent
 
 ```typescript
-import type { IAutomationComponent } from '@twin.org/automation-models';
+import type { IAutomationComponent } from '@3sixty/automation-models';
 
 // Example implementation skeleton
 class MyComponent implements IAutomationComponent {
@@ -65,7 +65,7 @@ class MyComponent implements IAutomationComponent {
 ## AutomationActionFactory
 
 ```typescript
-import { AutomationActionFactory } from '@twin.org/automation-models';
+import { AutomationActionFactory } from '@3sixty/automation-models';
 
 AutomationActionFactory.register('my-action', opts => new MyAction());
 const action = AutomationActionFactory.createIfExists('my-action');

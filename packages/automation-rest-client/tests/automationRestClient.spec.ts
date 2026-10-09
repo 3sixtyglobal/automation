@@ -1,8 +1,8 @@
 // Copyright 2026 IOTA Stiftung.
 // SPDX-License-Identifier: Apache-2.0.
-import type { IAutomationActionEntry } from "@twin.org/automation-models";
-import { GuardError } from "@twin.org/core";
-import { HttpMethod } from "@twin.org/web";
+import type { IAutomationActionEntry } from "@3sixty/automation-models";
+import { GuardError } from "@3sixty/core";
+import { HttpMethod } from "@3sixty/web";
 import { AutomationRestClient } from "../src/automationRestClient.js";
 import {
 	createdResponse,

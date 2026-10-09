@@ -1,4 +1,4 @@
-# TWIN Automation
+# 3Sixty Automation
 
 TWIN Automation is a modular framework for defining, managing, and executing automation workflows and actions. It provides a set of packages for modelling automation data, implementing automation logic, exposing REST APIs, and integrating with external systems. The repository is designed to support scalable, maintainable, and interoperable automation solutions.
 

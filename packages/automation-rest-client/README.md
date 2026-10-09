@@ -1,11 +1,11 @@
-# TWIN Automation REST Client
+# 3Sixty Automation REST Client
 
 This package provides REST client operations for creating, updating, retrieving, and querying managed documents. It facilitates integration with automation services and external systems.
 
 ## Installation
 
 ```shell
-npm install @twin.org/automation-rest-client
+npm install @3sixty/automation-rest-client
 ```
 
 ## Examples

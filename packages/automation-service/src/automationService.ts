@@ -4,7 +4,7 @@ import {
 	AutomationActionFactory,
 	type IAutomationActionEntry,
 	type IAutomationComponent
-} from "@twin.org/automation-models";
+} from "@3sixty/automation-models";
 import {
 	BaseError,
 	ComponentFactory,
@@ -13,14 +13,14 @@ import {
 	Is,
 	NotFoundError,
 	RandomHelper
-} from "@twin.org/core";
-import { ComparisonOperator } from "@twin.org/entity";
+} from "@3sixty/core";
+import { ComparisonOperator } from "@3sixty/entity";
 import {
 	EntityStorageConnectorFactory,
 	type IEntityStorageConnector
-} from "@twin.org/entity-storage-models";
-import type { ILoggingComponent } from "@twin.org/logging-models";
-import { nameof } from "@twin.org/nameof";
+} from "@3sixty/entity-storage-models";
+import type { ILoggingComponent } from "@3sixty/logging-models";
+import { nameof } from "@3sixty/nameof";
 import type { AutomationActionEntry } from "./entities/automationActionEntry.js";
 import type { IAutomationServiceConstructorOptions } from "./models/IAutomationServiceConstructorOptions.js";
 

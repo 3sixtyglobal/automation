@@ -8,6 +8,7 @@
 	"release-type": "node",
 	"initial-version": "0.0.1",
 	"versioning": "default",
+	"last-release-sha": "e065915e38564648c579d0bfdec9ec7ccd47a0f0",
 	"packages": {
 		"packages/automation-models": {
 			"package-name": "automation-models",

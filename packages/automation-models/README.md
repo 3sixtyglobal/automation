@@ -1,11 +1,11 @@
-# TWIN Automation Models
+# 3Sixty Automation Models
 
 This package provides shared data models for automation. It serves as a foundational component, enabling other packages to build upon a consistent and reliable base for representing automation entities.
 
 ## Installation
 
 ```shell
-npm install @twin.org/automation-models
+npm install @3sixty/automation-models
 ```
 
 ## Examples

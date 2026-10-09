@@ -5,8 +5,8 @@ This package provides a class for performing HTTP requests as automation actions
 ## FetchAction
 
 ```typescript
-import { FetchAction } from '@twin.org/automation-actions';
-import { HttpMethod } from '@twin.org/web';
+import { FetchAction } from '@3sixty/automation-actions';
+import { HttpMethod } from '@3sixty/web';
 
 // Create a fetch action with a simple GET request
 const action = new FetchAction({

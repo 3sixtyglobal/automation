@@ -1,4 +1,4 @@
-# @twin.org/automation-models
+# @3sixty/automation-models
 
 ## Interfaces
 

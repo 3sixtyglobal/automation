@@ -1,11 +1,11 @@
-# TWIN Automation Service
+# 3Sixty Automation Service
 
 This package provides service-side automation operations and REST route generation for server integrations. It ensures automation logic is accessible and maintainable for server-side applications.
 
 ## Installation
 
 ```shell
-npm install @twin.org/automation-service
+npm install @3sixty/automation-service
 ```
 
 ## Examples

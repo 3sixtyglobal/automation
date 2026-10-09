@@ -1,11 +1,11 @@
-# TWIN Automation Actions
+# 3Sixty Automation Actions
 
 This package provides actions for automation operations in the TWIN framework. It offers reusable logic for automation workflows and integrations.
 
 ## Installation
 
 ```shell
-npm install @twin.org/automation-actions
+npm install @3sixty/automation-actions
 ```
 
 ## Examples

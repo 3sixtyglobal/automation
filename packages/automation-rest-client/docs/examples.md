@@ -5,7 +5,7 @@ This package provides a client for managing automation actions via REST endpoint
 ## AutomationRestClient
 
 ```typescript
-import { AutomationRestClient } from '@twin.org/automation-rest-client';
+import { AutomationRestClient } from '@3sixty/automation-rest-client';
 
 // Create a client instance
 const client = new AutomationRestClient({ endpoint: 'http://localhost:8080' });

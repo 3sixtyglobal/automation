@@ -1,4 +1,4 @@
-# @twin.org/automation-rest-client
+# @3sixty/automation-rest-client
 
 ## Classes
 
