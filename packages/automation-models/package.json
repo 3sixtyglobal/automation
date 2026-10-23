@@ -1,6 +1,6 @@
 {
 	"name": "@3sixty/automation-models",
-	"version": "0.20.0-next.0",
+	"version": "0.20.0-next.1",
 	"description": "Shared data models for automation. Provides a consistent foundation for representing automation entities and enables other packages to build upon a reliable base.",
 	"repository": {
 		"type": "git",
