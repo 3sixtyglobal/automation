@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.20.0-next.2](https://github.com/3sixtyglobal/automation/compare/automation-models-v0.20.0-next.1...automation-models-v0.20.0-next.2) (2026-10-26)
+
+
+### Features
+
+* release to next [skip ci] ([#2](https://github.com/3sixtyglobal/automation/issues/2)) ([724d4a9](https://github.com/3sixtyglobal/automation/commit/724d4a9e65e3286f349aff6cddc51ea5d9559dc8))
+
 ## [0.20.0-next.1](https://github.com/3sixtyglobal/automation/compare/automation-models-v0.20.0-next.0...automation-models-v0.20.0-next.1) (2026-10-23)
 
 
